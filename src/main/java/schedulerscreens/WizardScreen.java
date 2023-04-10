@@ -10,4 +10,14 @@ public class WizardScreen extends BaseScreen {
     }
     @FindBy (xpath="//*[@resource-id='bla bla']")
     MobileElement skipButton;
+
+    public HomeScreen skipWizard()
+    {
+        if(isDisplayedWithExp(skipButton))
+        {
+            skipButton.click();
+        }
+
+        return new HomeScreen(driver);
+    }
 }

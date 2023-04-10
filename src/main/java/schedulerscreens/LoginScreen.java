@@ -18,6 +18,7 @@ public class LoginScreen extends BaseScreen {
 
     public LoginScreen fillEmail(String email)
     {
+        should(emailEditText,15);
         type(emailEditText,email);
         return this;
     }

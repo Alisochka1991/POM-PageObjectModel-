@@ -17,6 +17,10 @@ public String etCurrencyVersion()
 {
     return versionTextView.getText();
 }
-
+ public LoginScreen checkVersion(String text)
+ {
+     shouldHave(versionTextView,text, 10);
+     return new LoginScreen(driver);
+ }
 }
 
